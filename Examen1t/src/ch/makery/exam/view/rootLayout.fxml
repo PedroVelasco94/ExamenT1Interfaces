@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.exam.view.RootLayoutController">
+   <children>
+      <GridPane prefHeight="400.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints minWidth="-Infinity" prefWidth="48.0" />
+          <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="372.0" />
+          <ColumnConstraints minWidth="-Infinity" prefWidth="48.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="lateralpanel" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="lateralpanel" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="lateralpanel" GridPane.columnIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="lateralpanel" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="lateralpanel" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <GridPane alignment="CENTER" layoutX="2.0" layoutY="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="138.0" minWidth="10.0" prefWidth="133.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="167.0" minWidth="10.0" prefWidth="133.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="153.0" minWidth="10.0" prefWidth="134.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" valignment="BASELINE" vgrow="ALWAYS" />
+               </rowConstraints>
+               <children>
+                  <ImageView fx:id="avatar_i" fitHeight="133.0" fitWidth="148.0" layoutX="2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="1.0" GridPane.columnIndex="1" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="@img/profilephoto.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="avatar_c" fitHeight="133.0" fitWidth="148.0" layoutX="136.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="66.0" AnchorPane.topAnchor="1.0" GridPane.columnIndex="2" HBox.hgrow="NEVER">
+                     <image>
+                        <Image url="@img/profilephoto.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="avatar_d" fitHeight="133.0" fitWidth="148.0" layoutX="270.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="1.0" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="@img/profilephoto.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <AnchorPane prefHeight="125.0" prefWidth="48.0" styleClass="lateralpanel">
+               <children>
+                  <ImageView fx:id="gitIcon" fitHeight="52.0" fitWidth="48.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@img/github_white.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="58.0" layoutX="346.0" layoutY="81.0" onMouseClicked="#pulsar" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                     <image>
+                        <Image url="@img/send.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="14.0" styleClass="labelName" text="Me differently" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="128.0" AnchorPane.topAnchor="10.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="34.0" prefHeight="17.0" prefWidth="58.0" text="Pedro V." AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="173.0" AnchorPane.topAnchor="30.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="128.0" layoutY="58.0" prefHeight="17.0" prefWidth="148.0" styleClass="labelSubTitle" text="Programers can design" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="128.0">
+                     <font>
+                        <Font name="System Font Bold" size="13.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Label layoutY="24.0" style="-fx-background-color: #009688; -fx-text-fill: white; -fx-font-weight: bold;" text="View in GitHub">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
